@@ -1,0 +1,30 @@
+.c-HomeHero{
+  margin: 0;
+  height: 100vh;
+  min-height: 450px;
+  width: 100%;
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.c-HomeHero--textBox{
+  height: fit-content;
+  width: fit-content;
+  min-width: 400px;
+}
+
+.c-HomeHero--title{
+  color: white;
+  font-family: "Pirulen";
+  font-size: 62px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.c-HomeHero--subtitle{
+  text-align: center;
+}
