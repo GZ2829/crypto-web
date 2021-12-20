@@ -1,0 +1,18 @@
+.c-HomeAbout{
+  margin: 0;
+  height: 100vh;
+  min-height: 450px;
+  width: 100%;
+  background-color: #d98324;
+  background-image: linear-gradient(115deg, #d98324 -18%, #a40606 74%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.c-HomeAbout--textBox{
+  height: fit-content;
+  width: fit-content;
+  min-width: 90%;
+}

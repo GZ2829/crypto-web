@@ -27,4 +27,49 @@
 
 .c-HomeHero--subtitle{
   text-align: center;
+  font-family: "Video";
+  font-size: 42px;
+  color: white;
+}
+
+
+.output {
+  text-align:center;
+  font-family: 'Source Code Pro', monospace;
+  color:white;
+  h1 {
+    font-size:30px;
+  }
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:white;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+
+p.cursor::after {
+  height:13px;
+  width:6px;
+}
+
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
 }

@@ -1,7 +1,15 @@
 @import url('~/style/home/hero.scss');
+@import url('~/style/home/about.scss');
 
 @font-face {
     font-family: "Pirulen";
     src: local("Pirulen;"),
      url(~/assets/pirulen-rg.otf) format("OpenType");
+}
+
+
+@font-face {
+    font-family: "Video";
+    src: local("Video;"),
+     url(~/assets/Video.ttf) format("TrueType");
 }
