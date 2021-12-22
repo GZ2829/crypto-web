@@ -2,6 +2,7 @@
   <div>
     <HomeHero/>
     <HomeAbout/>
+    <HomeNft/>
   </div>
 </template>
 

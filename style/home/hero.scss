@@ -3,8 +3,8 @@
   height: 100vh;
   min-height: 450px;
   width: 100%;
-  background-color: #a40606;
-  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  background-color: #380036;
+  background-image: linear-gradient(100deg, #380036 60vw, #017979 80vw);
   align-items: center;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 
-.output {
+/* .output {
   text-align:center;
   font-family: 'Source Code Pro', monospace;
   color:white;
@@ -42,7 +42,7 @@
   }
 }
 
-/* Cursor Styling */
+/* Cursor Styling
 
 .cursor::after {
   content:'';
@@ -73,3 +73,5 @@ p.cursor::after {
     opacity:0;
   }
 }
+
+*/

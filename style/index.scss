@@ -1,5 +1,6 @@
 @import url('~/style/home/hero.scss');
 @import url('~/style/home/about.scss');
+@import url('~/style/home/nft.scss');
 
 @font-face {
     font-family: "Pirulen";
@@ -12,4 +13,24 @@
     font-family: "Video";
     src: local("Video;"),
      url(~/assets/Video.ttf) format("TrueType");
+}
+
+@font-face {
+  font-family: "Objectivity-Light";
+  src: local("Objectivity-Light;"),url(~/assets/Objectivity-Light.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Objectivity-Bold";
+  src: local("Objectivity-Bold;"),url(~/assets/Objectivity-Bold.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "Objectivity-Regular";
+  src: local("Objectivity-Regular;"),url(~/assets/Objectivity-Regular.otf) format("OpenType");
+}
+
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: local("DancingScript-Regular;"),url(~/assets/DancingScript-Regular.ttf) format("TrueType");
 }

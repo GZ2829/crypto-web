@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'crypto-portfolio',
+    title: 'Greg Zucchero: Web 3 Developer',
     htmlAttrs: {
       lang: 'en'
     },
