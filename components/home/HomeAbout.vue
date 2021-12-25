@@ -1,6 +1,8 @@
 <template>
 <div class="c-HomeAbout">
 
+  <div class="c-HomeAbout--outerBox">
+
   <div class="c-HomeAbout--textBox">
     <h1>Let it be said...</h1>
     <p>It stands to reason we are heading to an uncertain age.
@@ -19,7 +21,28 @@
         </p>
         <h5>Signed,</h5>
         <h2>Gregory Zucchero</h2>
-  </div>
+      </div>
+
+      <VueSlickCarousel :arrows="true" :dots="true">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </VueSlickCarousel>
+
+    </div>
 
 </div>
 </template>
+
+
+<script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
+export default {
+    components: { VueSlickCarousel },
+}
+</script>

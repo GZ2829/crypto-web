@@ -1,21 +1,26 @@
 .c-HomeAbout{
   margin: 0;
-  height: fit-content;
+  height: 100%;
   min-height: 450px;
   width: 100%;
   background-color: #380036;
   background-image: linear-gradient(100deg, #380036 60vw, #017979 80vw);
+}
+
+.c-HomeAbout--outerBox{
+  width: 90%;
+  height: fit-content;
+  padding: 80px 0;
+  margin: 0 auto;
   align-items: center;
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
 }
 
 .c-HomeAbout--textBox{
   height: fit-content;
   width: fit-content;
-  margin: 80px 0;
-  max-width: 90%;
+  max-width: 750px;
 
 }
 
@@ -29,8 +34,8 @@ h1{
 
 p{
   color: white;
-  font-size: 22px;
-  line-height: 45px;
+  font-size: 16px;
+  line-height: 20px;
   font-family: Objectivity-Regular;
   letter-spacing: .5px
 }
