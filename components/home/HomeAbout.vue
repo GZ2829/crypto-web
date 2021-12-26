@@ -24,10 +24,10 @@
       </div>
 
       <VueSlickCarousel :arrows="true" :dots="true">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div class="c-HomeAbout--CarouselItem">Word</div>
+        <div class="c-HomeAbout--CarouselItem">Word</div>
+        <div class="c-HomeAbout--CarouselItem">Word</div>
+        <div class="c-HomeAbout--CarouselItem">Word</div>
       </VueSlickCarousel>
 
     </div>
@@ -46,3 +46,20 @@ export default {
     components: { VueSlickCarousel },
 }
 </script>
+
+<style lang="scss" scoped>
+  /* carousel overrides */
+
+  .slick-slider{
+    max-width: 500px;
+
+  }
+
+  .c-HomeAbout--CarouselItem{
+    height: 500px;
+    width: 300px;
+    background-color: #380036;
+    background-image: linear-gradient(100deg, #380036 70vw, #017979 90vw);
+    border: 1px solid #380036;
+  }
+</style>

@@ -5,7 +5,7 @@
     <h1 class="c-HomeHero--title">Gregory Zucchero</h1>
     <h3 class="c-HomeHero--subtitle">Web & Crypto Enthusiast</h3>
   </div>
-  <vue-particles color="#dedede" :particlesNumber="150"></vue-particles>
+  <!-- <vue-particles color="#dedede" :particlesNumber="150"></vue-particles> -->
 </div>
 </template>
 
@@ -21,8 +21,7 @@ import Vue from 'vue'
 import VueParticles from 'vue-particles'
 Vue.use(VueParticles)
 
-export default{
-
+export default {
   data() {
     return{
 
