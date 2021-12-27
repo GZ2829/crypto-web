@@ -5,7 +5,9 @@
     <h1 class="c-HomeHero--title">Gregory Zucchero</h1>
     <h3 class="c-HomeHero--subtitle">Web & Crypto Enthusiast</h3>
   </div>
-  <!-- <vue-particles color="#dedede" :particlesNumber="150"></vue-particles> -->
+  <no-ssr>
+    <vue-particles color="#dedede" :particlesNumber="250"></vue-particles>
+  </no-ssr>
 </div>
 </template>
 
@@ -36,12 +38,6 @@ export default {
 
 
   methods:{
-    initParticles(){
-      // var particles = Particles.init({
-	    //    selector: '.c-HomeHero',
-      //    color: '#DA0463'
-      //  });
-    },
     initTypeAnimation(){
       var i = 0;
       var a = 0;
