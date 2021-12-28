@@ -23,7 +23,7 @@
         <h2>Gregory Zucchero</h2>
       </div>
 
-      <VueSlickCarousel :arrows="true" :dots="true">
+      <VueSlickCarousel :autoplay="true" :arrows="false" :dots="true">
         <div class="c-HomeAbout--CarouselItem">Word</div>
         <div class="c-HomeAbout--CarouselItem">Word</div>
         <div class="c-HomeAbout--CarouselItem">Word</div>
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   /* carousel overrides */
 
   .slick-slider{
@@ -55,11 +55,23 @@ export default {
 
   }
 
+  .slick-dots {
+    display: flex!important;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .slick-dots li button:before{
+    font-size: 32px;
+    line-height: 45px;
+    width: auto;
+    height: auto;
+  }
+
   .c-HomeAbout--CarouselItem{
     height: 500px;
     width: 300px;
-    background-color: #380036;
-    background-image: linear-gradient(100deg, #380036 70vw, #017979 90vw);
-    border: 1px solid #380036;
+    background-color: teal;
+    border: 5px solid #380036;
   }
 </style>

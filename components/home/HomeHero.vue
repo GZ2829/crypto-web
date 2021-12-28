@@ -6,7 +6,7 @@
     <h3 class="c-HomeHero--subtitle">Web & Crypto Enthusiast</h3>
   </div>
   <no-ssr>
-    <vue-particles color="#dedede" :particlesNumber="250"></vue-particles>
+    <vue-particles color="#dedede" :particlesNumber="150"></vue-particles>
   </no-ssr>
 </div>
 </template>
