@@ -23,11 +23,10 @@
         <h2>Gregory Zucchero</h2>
       </div>
 
-      <VueSlickCarousel :autoplay="true" :arrows="false" :dots="true">
-        <div class="c-HomeAbout--CarouselItem">Word</div>
-        <div class="c-HomeAbout--CarouselItem">Word</div>
-        <div class="c-HomeAbout--CarouselItem">Word</div>
-        <div class="c-HomeAbout--CarouselItem">Word</div>
+      <VueSlickCarousel :autoplay="true" :arrows="false">
+        <div class="c-HomeAbout--CarouselItem"><p class="c-HomeAbout--CarouselText">4 years Dev-ops experience</p></div>
+        <div class="c-HomeAbout--CarouselItem"><p class="c-HomeAbout--CarouselText">2.5 years Professional experience</p></div>
+        <div class="c-HomeAbout--CarouselItem"><p class="c-HomeAbout--CarouselText">1 year Solidity/Smart Contract experience</p></div>
       </VueSlickCarousel>
 
     </div>
@@ -55,23 +54,20 @@ export default {
 
   }
 
-  .slick-dots {
-    display: flex!important;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .slick-dots li button:before{
+  .c-HomeAbout--CarouselText{
     font-size: 32px;
-    line-height: 45px;
-    width: auto;
-    height: auto;
+    color: white;
+    font-family: Objectivity-Regular;
+    text-align: center;
   }
 
   .c-HomeAbout--CarouselItem{
-    height: 500px;
-    width: 300px;
-    background-color: teal;
-    border: 5px solid #380036;
+    height: 300px;
+    width: 98%!important;
+    background-color: transparent;
+    border: .01px solid #380036;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
   }
 </style>
