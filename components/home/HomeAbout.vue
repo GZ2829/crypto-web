@@ -57,6 +57,7 @@ export default {
   .c-HomeAbout--CarouselText{
     font-size: 32px;
     color: white;
+    max-width: 80%;
     font-family: Objectivity-Regular;
     text-align: center;
   }
@@ -65,7 +66,7 @@ export default {
     height: 300px;
     width: 98%!important;
     background-color: transparent;
-    border: .01px solid #380036;
+    border: .1px solid #380036;
     display: flex!important;
     justify-content: center;
     align-items: center;
