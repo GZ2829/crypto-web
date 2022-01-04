@@ -5,6 +5,6 @@
         <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="Metamask"
             class="h-5 mr-2">
-        Connect to Metamask
+        Connect to Metamask !
     </div>
 </template>
