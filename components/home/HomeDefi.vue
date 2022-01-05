@@ -1,14 +1,7 @@
 <template>
   <div class="c-HomeDefi">
     <h1>Defi Tools & Examples</h1>
-    <div
-        @click="$emit('connect')"
-        class="flex flex-row w-1/4 justify-center items-center p-3 border-2 text-blue-600 border-blue-600 font-bold hover:text-white hover:bg-blue-600">
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="Metamask"
-            class="h-5 mr-2">
-        Connect to Metamask
-    </div>
+    <MetaMask/>
     <VueSlickCarousel :autoplay="false" :arrows="false" :dot="true">
       <div class="c-HomeDefi--CarouselItem"> Hello</div>
     </VueSlickCarousel>
@@ -23,10 +16,12 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import Web3 from 'web3'
 
+import MetaMask from '~/snippets/MetaMask.vue'
+
 import { mapGetters, mapMutations } from 'vuex';
 
 export default {
-    components: { VueSlickCarousel },
+    components: { VueSlickCarousel, MetaMask },
 
     data () {
       return {

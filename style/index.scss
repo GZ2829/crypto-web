@@ -1,6 +1,8 @@
-@import url('~/style/home/hero.scss');
-@import url('~/style/home/about.scss');
-@import url('~/style/home/defi.scss');
+@import url('~/style/components/hero.scss');
+@import url('~/style/components/about.scss');
+@import url('~/style/components/defi.scss');
+
+@import url('~/style/snippets/metamask.scss');
 
 @font-face {
     font-family: "Pirulen";
