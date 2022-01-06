@@ -1,3 +1,5 @@
+import Web3 from 'web3'
+
 const web3 = {
     namespaced: true,
 
@@ -28,6 +30,39 @@ const web3 = {
     },
 
     actions: {
+      async initWeb3 () {
+        // Check for web3 provider
+        if (typeof window.ethereum !== 'undefined') {
+          try {
+            const instance = new Web3(window.ethereum)
+            // const accounts = await instance.getAccounts
+
+            console.log(instance.eth)
+            // Get necessary info on your node
+            const networkId = await instance.eth.net.getId();
+            const coinbase = await instance.eth.getCoinbase();
+            const balance = await instance.eth.getBalance(coinbase);
+            // Save it to store
+            this.registerWeb3Instance({
+              networkId,
+              coinbase,
+              balance
+            });
+            this.errorMessage = '';
+          } catch (error) {
+            // User denied account access
+            console.error('User denied web3 access', error);
+            this.errorMessage = 'Please connect to your Ethereum address on Metamask before connecting to this website';
+            return;
+          }
+        }
+        // No web3 provider
+        else {
+          console.error('No web3 provider detected');
+          this.errorMessage = "No web3 provider detected. Did you install the Metamask extension on this browser?";
+          return;
+        }
+      }
     }
 }
 
