@@ -12,6 +12,7 @@
 </template>
 
 <style>
+/* add comment */
 .particles-js-canvas-el{
   position: absolute!important;
 }
